@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="PriceChanger.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <system.diagnostics>
+        <sources>
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information" />
+        </switches>
+        <sharedListeners>
+            <add name="FileLog"
+                 type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                 initializeData="FileLogWriter"/>
+        </sharedListeners>
+    </system.diagnostics>
+    <applicationSettings>
+        <PriceChanger.My.MySettings>
+            <setting name="Server" serializeAs="String">
+                <value>YOUR_SQL_SERVER</value>
+            </setting>
+            <setting name="ISMDatabase" serializeAs="String">
+                <value>InnFront</value>
+            </setting>
+            <setting name="AppDatabase" serializeAs="String">
+                <value>PriceChanger</value>
+            </setting>
+            <setting name="SQLUser" serializeAs="String">
+                <value>YOUR_SQL_USER</value>
+            </setting>
+            <setting name="SQLPwd" serializeAs="String">
+                <value>YOUR_SQL_PASSWORD</value>
+            </setting>
+            <setting name="ISMSQLUser" serializeAs="String">
+                <value>YOUR_ISM_SQL_USER</value>
+            </setting>
+            <setting name="ISMServer" serializeAs="String">
+                <value>YOUR_ISM_SQL_SERVER</value>
+            </setting>
+            <setting name="ISMSQLPwd" serializeAs="String">
+                <value>YOUR_ISM_SQL_PASSWORD</value>
+            </setting>
+            <setting name="eMailRelay" serializeAs="String">
+                <value>YOUR_SMTP_RELAY</value>
+            </setting>
+            <setting name="MailsBeforeCooldown" serializeAs="String">
+                <value>10</value>
+            </setting>
+            <setting name="CooldownSeconds" serializeAs="String">
+                <value>10</value>
+            </setting>
+            <setting name="eMailUser" serializeAs="String">
+                <value>YOUR_EMAIL_USER</value>
+            </setting>
+            <setting name="eMailPwd" serializeAs="String">
+                <value>YOUR_EMAIL_PASSWORD</value>
+            </setting>
+        </PriceChanger.My.MySettings>
+    </applicationSettings>
+</configuration>

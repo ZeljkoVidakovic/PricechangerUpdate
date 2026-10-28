@@ -1,0 +1,29 @@
+# Build
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+*.user
+*.suo
+*.cache
+.vs/
+UpgradeLog.htm
+UpgradeLog*.xml
+
+# VS upgrade backup of DotPeek export
+PriceChangerToUpdate/Backup/
+
+# Local secrets (SQL / e-mail credentials) — keep locally, use App.config.example
+PriceChangerToUpdate/App.config
+Pricechanger/**/*.config
+!Pricechanger/**/*.config.example
+
+# Junk / local archives in original install folder
+Pricechanger/To Delete/
+Pricechanger/Archive/
+*.rar
+
+# OS / tooling
+Thumbs.db
+Desktop.ini
+*.pdb

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\zeljk\Desktop\VPN\Pricechanger\PriceChanger.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACAEEB80-13C9-4E19-8DE0-5AFD9B060EC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>PriceChanger</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.3.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>PriceChanger</RootNamespace>
+    <LangVersion>10.0</LangVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel">
+      <HintPath>lib\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Graphing.V3">
+      <HintPath>lib\Graphing.V3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guifreaks.Common">
+      <HintPath>lib\Guifreaks.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Guifreaks.NavigationBar">
+      <HintPath>lib\Guifreaks.NavigationBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDuplicateProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuplicateProductsV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewProductGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewProductSubGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResolveIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResolveProdugtGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResolveSubGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResolveSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.cs" />
+    <Compile Include="SpeechBalloon.cs" />
+    <Compile Include="BalloonShape.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="My\InternalXmlHelper.cs" />
+    <Compile Include="My\MySettings.cs" />
+    <Compile Include="My\MySettingsProperty.cs" />
+    <Compile Include="My\Resources\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ZVEplanation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZVEplanation.Designer.cs">
+      <DependentUpon>ZVEplanation.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="exe.licenses" />
+    <EmbeddedResource Include="frmDuplicateProducts.resx" />
+    <EmbeddedResource Include="frmDuplicateProductsV2.resx" />
+    <EmbeddedResource Include="frmMain.resx" />
+    <EmbeddedResource Include="frmNewIndex.resx" />
+    <EmbeddedResource Include="frmNewProductGroup.resx" />
+    <EmbeddedResource Include="frmNewProductSubGroup.resx" />
+    <EmbeddedResource Include="frmResolveIndex.resx" />
+    <EmbeddedResource Include="frmResolveProdugtGroups.resx" />
+    <EmbeddedResource Include="frmResolveSubGroups.resx" />
+    <EmbeddedResource Include="frmResolveSupplier.resx" />
+    <EmbeddedResource Include="frmSelectPriceList.resx" />
+    <EmbeddedResource Include="frmSelectSupplier.resx" />
+    <EmbeddedResource Include="mBox.resx" />
+    <EmbeddedResource Include="Resources.resx" />
+    <EmbeddedResource Include="ZVEplanation.resx">
+      <DependentUpon>ZVEplanation.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
